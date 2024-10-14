@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  place-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +37,53 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 1140px;
+  height: 534px;
+  gap: 30px;
+  
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__list {
+height: 298px;
+overflow: auto;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  gap: 26px;
+}
+
+.result__video-container {
+  height: 100%;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
 }
