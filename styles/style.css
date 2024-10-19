@@ -260,8 +260,9 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__pseudo-checkbox:hover + .search-form__label-text,
-.search-form__label-text:hover {
+.search-form__label:has(
+    .search-form__pseudo-checkbox + .search-form__label-text
+  ):hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
